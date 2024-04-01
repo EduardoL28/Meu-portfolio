@@ -91,7 +91,7 @@ main #main-header {
     justify-content: center;
     align-items: center;
     padding-left: 3% ; 
-    margin-top: 5%;
+    /* margin-top: 5%; */
 }
 
 .eu img {
