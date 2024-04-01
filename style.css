@@ -1,0 +1,311 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    /* background: rgb(0,83,133);
+    background: linear-gradient(270deg, rgba(0,83,133,1) 0%, rgba(3,113,139,1) 8%, rgba(0,6,14,1) 77%, rgba(0,0,0,1) 100%); */
+    background-image: url(https://i.gifer.com/68g.gif);
+}
+
+
+
+/* COMEÇO HEADER ---------------------------------------------------------------------------------------------------- */
+
+
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 400;
+    font-family: 'montserrat', sans-serif;
+    display: flex;
+    align-items: center;
+    height: 12vh;
+    background: linear-gradient(135deg, #087d91cb, #0ec6e644 );
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: solid 2px #000000;
+    padding: 20px 4%;
+}
+
+.headerzin {
+    display: flex;
+    justify-content: space-around;
+}
+
+.headerzin img {
+    width: 10%;
+    height: 15%;
+    margin-top: 1.5%;
+}
+
+nav a {
+    display: inline-block;
+    margin: 9% 30px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.8vw;
+    position: relative;
+    text-shadow: #000000 1px 1px 1px, #000000 1px 1px 2px, #000000 1px 1px 3px, #000000 1px 1px 4px;
+}
+
+nav a:hover {
+    color: #a7a5a5;
+}
+
+nav a::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0%;
+    height: 3px;
+    background-image: linear-gradient(60deg, #000000,#000000 );
+    transition: all .8s ease    ;
+}
+
+nav a:hover::before {
+    width: 100%;
+}
+
+
+
+/* FINAL HEADER --------------------------------------------------------------------------------------------------- */
+
+
+
+/* COMEÇO INTRODUÇÃO ----------------------------------------------------------------------------------------------- */
+
+main {
+    padding-top: 15%;
+}
+
+main #main-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 3% ; 
+    margin-top: 5%;
+}
+
+.eu img {
+    width: 100%;
+    padding-right: 10%;
+    border-radius: 100%;
+    padding-top: 0;
+}
+
+span {
+    color: #0EC5E6;
+}
+
+main .txt{
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main h2, h3, h4, p {
+    border-radius: 40px;
+    padding: 0.5%;
+}
+
+main h2 {
+    font-size: 6vh;
+}
+
+main h3 {
+    font-size: 4vh;
+}
+
+main h4 {
+    background-color: #0ec6e681;
+    padding: 1% 2%;
+}
+
+main .txt p {
+    font-size: 3vh;
+    padding-right: 30%;
+}
+
+
+
+/* FINAL INTRODUÇÃO -------------------------------------------------------------------------------------------- */
+
+
+/* COMEÇO SOBRE ------------------------------------------------------------------------------------------------ */
+
+
+
+.txt-sobre {
+    color: aliceblue;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#sobre {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 13%;
+    padding: 10%;
+    background-color: #09525f;
+}
+
+#sobre img {
+    width: 80%;
+    height: 90%;
+    z-index: 1;
+    border-radius: inherit;
+}
+
+#sobre .image {
+    position: relative;
+    width: 80%;
+    height: 110%;
+    background-color: #000000;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#sobre .image::before{
+    content: " ";
+    position: absolute;
+    width: 800%;
+    height: 200%;
+    background: linear-gradient(180deg, #000000, #0EC5E6);
+    animation: bordinha 5s linear infinite alternate;
+}
+
+@keyframes bordinha {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#sobre .image::after {
+    content: " ";
+    position: absolute;
+    background-color: #000000;
+    inset: 5px;
+    border-radius: inherit;
+    
+}
+
+#sobre h1 {
+    font-size: 3vw;
+    margin-top: -20px;
+}
+
+#sobre p {
+    font-size: 2.5vh;
+    margin-top: 10%;
+    background-color: #0ec6e681;
+    padding: 5% 8%;
+}
+
+
+
+/* FINAL SOBRE --------------------------------------------------------------------------------------- */
+
+
+/* COMEÇO PROJETOS ----------------------------------------------------------------------------------- */
+
+
+
+#projetos {
+    margin-bottom: 20%;
+}
+
+#projetos h1 {
+    color: #ffffff;
+    font-size: 5em;
+    text-align: center;
+    margin: 8%;
+    font-family: "Kanit";
+}
+
+#projetos div a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 2.3em;
+    text-shadow: #ffffff 0 0 1px, #ffffff 0 0 4px;
+}
+
+#projetos div img {
+    width: 20%;
+    
+}
+
+#projetos div {
+    background-color: #0ec6e646;
+    margin: 2% 8%;
+    padding: 1.5%;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    font-family: "Kanit", sans-serif;
+    transition: 0.7s;
+}
+
+#projetos #proje-innova:hover {
+    background-image: url(innovahover.png);
+    background-position: center;
+    backdrop-filter: blur(1);
+    transform: scale(1.06);
+    box-shadow: #106be2 1px 1px 20px, #106be2 1px 1px 30px, #106be2 1px 1px 40px;
+}
+
+#projetos #proje-quiz:hover {
+    background-image: url(quizhover.png);
+    background-position: center;
+    transform: scale(1.06);
+    box-shadow: #751acf 1px 1px 20px, #751acf 1px 1px 30px, #751acf 1px 1px 40px;
+}
+
+#projetos #proje-calculadora:hover {
+    background-image: url(calculadora.png);
+    background-position: center;
+    transform: scale(1.06);
+    box-shadow: #751acf 1px 1px 20px, #751acf 1px 1px 30px, #751acf 1px 1px 40px;
+}
+
+#projetos #proje-tiktak:hover {
+    background-image: url(jogodavelha.png);
+    background-position: center;
+    transform: scale(1.06);
+    box-shadow: #098005 1px 1px 20px, #098005 1px 1px 30px, #098005 1px 1px 40px;
+}
+
+#projetos div img {
+    width: 20%;
+    margin-right: 30%;
+    border-radius: 20px;
+}
+
+
+
+/* FINAL PROJETOS ----------------------------------------------------------------------------------- */
+
+
+/* COMEÇO FOOTER ------------------------------------------------------------------------------------ */
+
+
+
+footer {
+    color: #0EC5E6;
+    background-color: #000000;
+    display: flex;
+}
+
+
+/*FINAL FOOTER --------------------------------------------------------------------------------------- */
